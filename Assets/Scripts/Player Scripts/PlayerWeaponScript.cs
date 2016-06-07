@@ -5,9 +5,8 @@ public class PlayerWeaponScript : MonoBehaviour {
     
    // speed is the rate at which the object will rotate
 	public float speed;
- 
-	void FixedUpdate () 
-	{
+     
+	void FixedUpdate ()  {
     	// Generate a plane that intersects the transform's position with an upwards normal.
     	Plane playerPlane = new Plane(Vector3.up, transform.position);
  
@@ -21,8 +20,7 @@ public class PlayerWeaponScript : MonoBehaviour {
     	//   to look at.
     	float hitdist = 0.0f;
     	// If the ray is parallel to the plane, Raycast will return false.
-    	if (playerPlane.Raycast (ray, out hitdist)) 
-		{
+    	if (playerPlane.Raycast (ray, out hitdist)) {
         	// Get the point along the ray that hits the calculated distance.
         	Vector3 targetPoint = ray.GetPoint(hitdist);
  
