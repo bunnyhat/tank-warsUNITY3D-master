@@ -6,7 +6,7 @@ public class PlayerWeaponScript : MonoBehaviour {
    // speed is the rate at which the object will rotate
 	public float speed;
      
-	void FixedUpdate ()  {
+	void FixedUpdate () {
     	// Generate a plane that intersects the transform's position with an upwards normal.
     	Plane playerPlane = new Plane(Vector3.up, transform.position);
  
