@@ -5,7 +5,7 @@
         "**/.git": true,
         "**/.DS_Store": true,
         "**/*.meta": true,
-        "**/*.*.meta": true,
+        "**/*.cs.meta": true,
         "**/*.unity": true,
         "**/*.unityproj": true,
         "**/*.mat": true,
